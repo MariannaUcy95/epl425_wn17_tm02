@@ -1,0 +1,33 @@
+
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES (1,'EPL425','Internet Technologies',1);
+
+
+
+
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES(1,'EPL131','Αρχές Προγραμματισμού Ι',NULL);
+
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES(2,'EPL133','Αντικειμενοστρεφής Προγραμματισμός',NULL);
+
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES(3,'EPL211','Θεωρία Υπολογισμού και Πολυπλοκότητα',NULL);
+
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES(4,'EPL221','Οργάνωση Υπολογιστών και Συμβολικός Προγραμματισμός',NULL);
+
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES(5,'EPL231','Δομές Δεδομένων και Αλγόριθμοι',NULL);
+
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES(6,'EPL232','Programming Techniques and Tools',NULL);
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES (2,'EPL233','Object Oriented Programming',1);
+
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES(7,'EPL342','Databases',NULL);
+
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES(8,'EPL361','Τεχνολογία Λογισμικού I',NULL);
+
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES(9,'EPL425','Internet Technologies',1);
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES(10,'EPL434','Λογικός Προγραμματισμός και Τεχνητή Νοημοσύνη',NULL);
+
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES(11,'EPL442','Υπολογιστικά Συστήματα Μάθησης',NULL);
+
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES(12,'EPL445','Ψηφιακή επεξεργασία εικόνας',NULL);
+
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES(13,'EPL446','Advanced Database Systems',NULL);
+
+INSERT INTO COURSE (Course_key, CCode, Title,TeacherID) VALUES(14,'EPL451','Εξόρυξη Δεδομένων στον Παγκόσμιο Ιστό',NULL);

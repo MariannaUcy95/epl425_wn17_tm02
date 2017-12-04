@@ -1,0 +1,15 @@
+
+INSERT INTO QUESTION (QCode,Question,LCode,Type,Time,Statistics,TeacherID) VALUES (1,'Internet:What is it?Can you guve a definition?',1,'Multiple Choice',40,NULL,1);
+INSERT INTO QUESTION (QCode,Question,LCode,Type,Time,Statistics,TeacherID) VALUES (2,'Internet:What is it?',1,'Multiple Choice',40,NULL,1);
+INSERT INTO QUESTION (QCode,Question,LCode,Type,Time,Statistics,TeacherID) VALUES (3,'What is the most appropriate sata structure for moddeling the Internet?',1,'Multiple Choice',40,NULL,1);
+INSERT INTO QUESTION (QCode,Question,LCode,Type,Time,Statistics,TeacherID) VALUES (4,'What type of network is the Internet?',1,'Multiple Choice',40,NULL,1);
+INSERT INTO QUESTION (QCode,Question,LCode,Type,Time,Statistics,TeacherID) VALUES (5,'What does best effort means for IP Protocol',1,'Multiple Choice',40,NULL,1);
+INSERT INTO QUESTION (QCode,Question,LCode,Type,Time,Statistics,TeacherID) VALUES (6,'What distribution follows the Internet traffic?',2,'Multiple Choice',40,NULL,1);
+INSERT INTO QUESTION (QCode,Question,LCode,Type,Time,Statistics,TeacherID) VALUES (7,'Which of the following elements belongs to the core of the Internet?',2,'Multiple Choice',40,NULL,1);
+INSERT INTO QUESTION (QCode,Question,LCode,Type,Time,Statistics,TeacherID) VALUES (8,'Which of the following protocols is NOT end-to-end?',2,'Multiple Choice',40,NULL,1);
+INSERT INTO QUESTION (QCode,Question,LCode,Type,Time,Statistics,TeacherID) VALUES (9,'What is autonomous system?',2,'Multiple Choice',40,NULL,1);
+INSERT INTO QUESTION (QCode,Question,LCode,Type,Time,Statistics,TeacherID) VALUES (10,'What is RIPE NCC?',2,'Multiple Choice',40,NULL,1);
+INSERT INTO QUESTION (QCode,Question,LCode,Type,Time,Statistics,TeacherID) VALUES (11,'Is Net Neutrality violated by the IP Protocol?',2,'Multiple Choice',40,NULL,1);
+INSERT INTO QUESTION (QCode,Question,LCode,Type,Time,Statistics,TeacherID) VALUES (12,'Which of the following group interests need to be considered when examining Network Neutrality?',2,'Multiple Choice',40,NULL,1);
+INSERT INTO QUESTION (QCode,Question,LCode,Type,Time,Statistics,TeacherID) VALUES (13,'Which tier is necessary for the operation of the Web Site?',4,'Multiple Choice',30,NULL,1);
+INSERT INTO QUESTION (QCode,Question,LCode,Type,Time,Statistics,TeacherID) VALUES (14,'Which statement is correct?',4,'Multiple Choice',30,NULL,1);

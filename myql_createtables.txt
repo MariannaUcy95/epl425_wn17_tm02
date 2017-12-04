@@ -1,0 +1,59 @@
+CREATE TABLE TEACHER(
+
+	TeacherID int NOT NULL PRIMARY KEY,
+	TeacherName varchar(20)NOT NULL,
+	Username varchar(10) NOT NULL,
+	Password varchar(10) NOT NULL
+);
+
+CREATE TABLE STUDENT(
+	StudentID int NOT NULL PRIMARY KEY,
+	Name varchar(20) NOT NULL,
+	Department varchar(20) NOT NULL
+);
+
+CREATE TABLE COURSE(
+	Course_key int NOT NULL PRIMARY KEY,
+	CCode varchar(10) NOT NULL,
+	Title varchar(50) NOT NULL,
+	TeacherID int NOT NULL,
+	FOREIGN KEY (TeacherID) REFERENCES TEACHER(TeacherID)
+);
+
+
+CREATE TABLE LECTURE(
+	LCode int NOT NULL PRIMARY KEY,
+	Title varchar(50) NOT NULL,
+	Course_key int NOT NULL
+);
+
+CREATE TABLE QUESTION(
+	QCode int NOT NULL PRIMARY KEY,
+	Question varchar(50) NOT NULL,
+	LCode int NOT NULL,
+	Type varchar(20) NOT NULL,
+	Time int NOT NULL, 
+	Statistics float NULL, 
+	TeacherID int NOT NULL,
+    FOREIGN KEY (TeacherID) REFERENCES TEACHER(TeacherID)
+);
+
+
+CREATE TABLE POSSIBLE_ANSWER(
+	AnswerNo int NOT NULL PRIMARY KEY,
+	TeacherID int NOT NULL,
+	QCode int NOT NULL,
+	Description varchar(20) NOT NULL,
+	Correct bit NOT NULL,
+    FOREIGN KEY (TeacherID) REFERENCES TEACHER(TeacherID)
+);
+
+CREATE TABLE ENROLL(
+	Course_Key int NOT NULL,
+	StudentID int NOT NULL,
+    PRIMARY KEY (Course_Key,StudentID),
+    FOREIGN KEY (Course_Key) REFERENCES COURSE(Course_key),
+    FOREIGN KEY (StudentID) REFERENCES STUDENT(StudentID)
+);
+
+
