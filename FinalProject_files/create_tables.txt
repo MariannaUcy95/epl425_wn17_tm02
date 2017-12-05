@@ -1,0 +1,53 @@
+CREATE DATABASE epl425;
+
+CREATE TABLE TEACHER(
+	TeacherID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	TeacherName varchar(20) NOT NULL,
+	Username varchar(10) NOT NULL,
+	Password varchar(10) NOT NULL
+);
+
+CREATE TABLE COURSE(
+	Course_key int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	CCode varchar(10) NOT NULL,
+	Title varchar(50) NOT NULL,
+	TeacherID int NOT NULL,
+	FOREIGN KEY (TeacherID) REFERENCES TEACHER(TeacherID)
+);
+
+
+CREATE TABLE LECTURE(
+	LCode int NOT NULL AUTO_INCREMENT,
+	Title varchar(50) NOT NULL,
+	Course_key int NOT NULL,
+    	PRIMARY KEY (LCode,Course_key),
+	FOREIGN KEY (Course_key) REFERENCES COURSE(Course_key)
+);
+
+CREATE TABLE QUESTION(
+	QCode int NOT NULL AUTO_INCREMENT,
+	Question varchar(100) NOT NULL,
+	LCode int NOT NULL,
+	Time int NOT NULL, 
+	Statistics float DEFAULT 0, 
+	TeacherID int NOT NULL,
+	Total int DEFAULT 0,
+	Total_Correct int DEFAULT 0,
+        PRIMARY KEY (QCode,LCode, TeacherID),
+    	FOREIGN KEY (LCode) REFERENCES LECTURE(LCode),
+        FOREIGN KEY (TeacherID) REFERENCES TEACHER(TeacherID)
+);
+
+
+CREATE TABLE POSSIBLE_ANSWER(
+	AnswerNo int NOT NULL AUTO_INCREMENT,
+	TeacherID int NOT NULL,
+	QCode int NOT NULL,
+	Description varchar(200) NOT NULL,
+	Correct bit NOT NULL,
+    	PRIMARY KEY (AnswerNo, QCode, TeacherID),
+    	FOREIGN KEY (TeacherID) REFERENCES TEACHER(TeacherID),
+        FOREIGN KEY (QCode) REFERENCES QUESTION(QCode)
+);
+
+
